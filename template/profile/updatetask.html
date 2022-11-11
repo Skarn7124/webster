@@ -1,0 +1,8 @@
+<h1> This is my form update page </h1>
+<form method="POST" autocomplete="off">
+    {% csrf_token %}
+    {{form.as_p}}
+
+
+    <button class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" type="submit">Submit</button>
+</form>

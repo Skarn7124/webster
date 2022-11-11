@@ -1,0 +1,12 @@
+<h1> This is my form delete page </h1>
+<form method="POST" autocomplete="off">
+    {% csrf_token %}
+    <p>
+        Are you sure you want to delete " {{object}} " ?
+    </p>
+    <a href = {%url 'viewtask' %}>
+        go back
+    </a>
+    <br> <br>
+    <button class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" type="submit">Submit</button>
+</form>
